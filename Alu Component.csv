@@ -1,0 +1,12 @@
+﻿Name,Quantity,Component
+"SW1, SW2, SW4, SW3, SW5",5," DIP Switch SPST x 4"
+"R1, R2, R7, R10, R11, R12, R14, R15, R16, R17, R19, R20, R21, R22, R23, R8",16,"220 Ω Resistor"
+"U2, U3",2," 4-Bit Adder"
+"D1, D2, D3, D4, D5, D6, D7, D8, D9",9,"Red LED"
+"R24, R25, R26, R27, R28, R29, R30, R32, R33, R57, R58, R6, R3, R4, R5, R9, R31, R18, R13",19,"330 Ω Resistor"
+"U4",1," 7-Segment Decoder"
+"T1, T2, T4",3," NPN Transistor (BJT)"
+"P2",1,"5 , 1  Power Supply"
+"Digit3, Digit4, Digit5",3,"Cathode 7 Segment Display"
+"U1",1," Arduino Uno R3"
+"R34, R35, R36",3,"1 kΩ Resistor"
