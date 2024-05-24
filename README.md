@@ -1,6 +1,6 @@
 # 8-bit ALU Implementation in IoT
 
-![8-bit ALU](image/Alu.png) <!-- Add an image that represents your project -->
+<img src="Image/Alu.png" alt="8-bit ALU" width="700" height="500">
 
 ## Overview
 This project demonstrates the design and implementation of an 8-bit Arithmetic Logic Unit (ALU) using various IoT components. The ALU adds two 8-bit binary values and displays the result on seven-segment displays. The main components include DIP switches, SN74LS83N Adder ICs, logic level shifters, a Raspberry Pi Pico, and seven-segment displays.
@@ -45,7 +45,7 @@ This project demonstrates the design and implementation of an 8-bit Arithmetic L
 3. **Voltage Level Shifting**: Converted the 8-bit output from the adder ICs (5V) to 3.3V using logic level shifters.
 4. **Data Processing and Display**: Connected the output to the Raspberry Pi Pico, wrote a Python program to convert the 8-bit binary output to BCD, and controlled the seven-segment displays using NPN transistors.
 
-![Tinkercad Design](image/Tinkercard.png)
+![Tinkercad Design](Image/Tinkercard.png)
 
 ## Software Design
 - **Programming**: Python code was used to read the 8-bit binary input, convert it to BCD, and control the seven-segment display.
@@ -54,7 +54,7 @@ This project demonstrates the design and implementation of an 8-bit Arithmetic L
 ## Circuit Diagram
 The detailed circuit diagram is provided in the `ALU Diagram.pdf` file.
 
-![Circuit Diagram](ALU%20Diagram.pdf)
+![Circuit Diagram](Documents/ALU%20Diagram.pdf)
 
 ## Setup Instructions
 ### Hardware Setup
