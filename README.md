@@ -14,9 +14,9 @@ This project demonstrates the design and implementation of an 8-bit Arithmetic L
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
 - [Acknowledgments](#acknowledgments)
-- [License](#license)
-- [Contact](#contact)
 - [Additional Files](#additional-files)
+- [License](#license)
+- [Contact](#connect-with-me)
 
 ## Features
 - **Addition of Two 8-bit Binary Numbers:** Inputs are provided via DIP switches.
@@ -77,18 +77,21 @@ cd 8-bit-ALU-Implementation
 2. **Output**: The sum of the input numbers will be displayed on the seven-segment displays.
 
 ## Acknowledgments
-Special thanks to [Mr.Kavinda Madhubhashana](https://github.com/advisors-github-username) for their invaluable technical advice and support throughout this project.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-- **Name**: Sithulaka
-- **Email**: [sithulakasss@gmail.com](mailto:sithulakasss@gmail.com)
-- **LinkedIn**: [Sithulaka](https://linkedin.com/in/sithulaka)
-- **GitHub**: [Sithulaka](https://github.com/sithulaka)
+Special thanks to [Mr.Kavinda Madhubhashana](https://www.linkedin.com/in/kavinda-madhubhashana-8852b5234/) for their invaluable technical advice and support throughout this project.
 
 ## Additional Files
 - **`alu.py`**: Python code for the Raspberry Pi Pico.
 - **`ALU Diagram.pdf`**: Detailed circuit diagram.
 - **`components.csv`**: CSV file listing all the components used.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Connect with me
+<p align="left">
+<a href="https://linkedin.com/in/sithulaka" target="blank"><img align="center" src="https://github.com/sithulaka/sithulaka/blob/main/image/icon/linked-in-alt.svg" alt="sithulaka" height="30" width="40" /></a>
+<a href="https://twitter.com/sithulaka" target="blank"><img align="center" src="https://github.com/sithulaka/sithulaka/blob/main/image/icon/twitter.svg" alt="sithulaka" height="30" width="40" /></a>
+<a href="https://fb.com/senithu.sithulaka.7" target="blank"><img align="center" src="https://github.com/sithulaka/sithulaka/blob/main/image/icon/facebook.svg" alt="sithulaka" height="30" width="40" /></a>
+<a href="https://instagram.com/_sithulaka_" target="blank"><img align="center" src="https://github.com/sithulaka/sithulaka/blob/main/image/icon/instagram.svg" alt="sithulaka" height="30" width="40" /></a>
+<!-- <a href="https://discord.gg/ugdvth5b6H" target="blank"><img align="center" src="https://github.com/sithulaka/sithulaka/blob/main/image/icon/discord.svg" alt="sithulaka" height="30" width="40" /></a> -->
+</p><br>
