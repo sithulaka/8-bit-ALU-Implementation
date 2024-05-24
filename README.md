@@ -1,65 +1,94 @@
 # 8-bit ALU Implementation in IoT
 
-This project demonstrates the design and implementation of an 8-bit Arithmetic Logic Unit (ALU) using various IoT components. The ALU adds two 8-bit binary values and displays the result on seven-segment displays.
+![8-bit ALU](image/Alu.png) <!-- Add an image that represents your project -->
 
-## Project Overview
+## Overview
+This project demonstrates the design and implementation of an 8-bit Arithmetic Logic Unit (ALU) using various IoT components. The ALU adds two 8-bit binary values and displays the result on seven-segment displays. The main components include DIP switches, SN74LS83N Adder ICs, logic level shifters, a Raspberry Pi Pico, and seven-segment displays.
 
-This project is a blend of digital electronics and embedded systems, showcasing the potential of IoT in creating sophisticated digital systems. The main components include DIP switches for input, SN74LS83N Adder ICs for computation, logic level shifters for voltage compatibility, and a Raspberry Pi Pico for processing and display control.
+## Table of Contents
+- [Features](#features)
+- [Components](#components)
+- [Hardware Design](#hardware-design)
+- [Software Design](#software-design)
+- [Circuit Diagram](#circuit-diagram)
+- [Setup Instructions](#setup-instructions)
+- [Usage](#usage)
+- [Acknowledgments](#acknowledgments)
+- [License](#license)
+- [Contact](#contact)
+- [Additional Files](#additional-files)
 
 ## Features
-
 - **Addition of Two 8-bit Binary Numbers:** Inputs are provided via DIP switches.
 - **Real-Time Display:** Results are shown on three seven-segment displays.
 - **Embedded Control:** Raspberry Pi Pico processes input and controls the display.
 - **Voltage Level Shifting:** Ensures compatibility between different components.
 
-## Components Used
+## Components
+### Hardware
+- DIP switches
+- SN74LS83N Adder ICs
+- Logic level shifters
+- Raspberry Pi Pico
+- Seven-segment displays
+- Seven-segment decoder
+- NPN transistors
+- Resistors
+- LEDs
 
-- **Hardware:**
-  - DIP switches
-  - SN74LS83N Adder ICs
-  - Logic level shifters
-  - Raspberry Pi Pico
-  - Seven-segment displays
-  - Seven-segment decoder
-  - NPN transistors
-  - Resistors
-  - LEDs
+### Software
+- Python for programming the Raspberry Pi Pico
 
-- **Software:**
-  - Python for programming the Raspberry Pi Pico
+## Hardware Design
+1. **Schematic Design**: Designed the circuit diagram using [Tinkercad](https://www.tinkercad.com/things/0uAzScpMNXA).
+2. **Input Handling**: Used pull-down resistors with DIP switches for stable input signals and connected two 4-bit adder ICs to form an 8-bit adder.
+3. **Voltage Level Shifting**: Converted the 8-bit output from the adder ICs (5V) to 3.3V using logic level shifters.
+4. **Data Processing and Display**: Connected the output to the Raspberry Pi Pico, wrote a Python program to convert the 8-bit binary output to BCD, and controlled the seven-segment displays using NPN transistors.
 
-## Project Files
+![Tinkercad Design](image/Tinkercard.png)
 
-- `alu.py`: Python code for converting 8-bit binary values to BCD and controlling the display.
-- `circuit_diagram.brd`: BRD file for the circuit diagram.
-- `components.csv`: CSV file listing all the components used.
+## Software Design
+- **Programming**: Python code was used to read the 8-bit binary input, convert it to BCD, and control the seven-segment display.
+- **Control Mechanism**: Utilized three control pins to manage the display of three seven-segment displays by turning them on/off through NPN transistors.
 
 ## Circuit Diagram
+The detailed circuit diagram is provided in the `ALU Diagram.pdf` file.
 
-Include an image of the circuit diagram here for quick reference.
+![Circuit Diagram](ALU%20Diagram.pdf)
 
-## Installation and Usage
-
+## Setup Instructions
 ### Hardware Setup
-
-1. **Circuit Design:**
-   - Follow the circuit diagram provided in `circuit_diagram.brd`.
-
-2. **Input Handling:**
-   - Use pull-down resistors with DIP switches for stable input signals.
-   - Connect two 4-bit adder ICs to form an 8-bit adder setup.
-
-3. **Voltage Level Shifting:**
-   - Convert the 8-bit output from the adder ICs (5V) to 3.3V using logic level shifters.
-
-4. **Data Processing and Display:**
-   - Connect the output to the Raspberry Pi Pico.
-   - Wire the seven-segment displays to the decoder and control them using NPN transistors.
+1. Connect the DIP switches, adder ICs, level shifters, seven-segment displays, decoder, transistors, resistors, and LEDs as per the circuit diagram.
+2. Ensure all connections are secure and components are correctly oriented.
 
 ### Software Setup
+1. Clone the repository and upload the provided Python code to the Raspberry Pi Pico.
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-username/8-bit-ALU-Implementation.git
-   cd 8-bit-ALU-Implementation
+```bash
+git clone https://github.com/sithulaka/8-bit-ALU-Implementation.git
+cd 8-bit-ALU-Implementation
+```
+
+2. Connect your Raspberry Pi Pico to your computer.
+3. Upload the `alu.py` script to the Raspberry Pi Pico.
+
+## Usage
+1. **Input**: Use the DIP switches to input two 8-bit binary numbers.
+2. **Output**: The sum of the input numbers will be displayed on the seven-segment displays.
+
+## Acknowledgments
+Special thanks to [Mr.Kavinda Madhubhashana](https://github.com/advisors-github-username) for their invaluable technical advice and support throughout this project.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+- **Name**: Sithulaka
+- **Email**: [sithulakasss@gmail.com](mailto:sithulakasss@gmail.com)
+- **LinkedIn**: [Sithulaka](https://linkedin.com/in/sithulaka)
+- **GitHub**: [Sithulaka](https://github.com/sithulaka)
+
+## Additional Files
+- **`alu.py`**: Python code for the Raspberry Pi Pico.
+- **`ALU Diagram.pdf`**: Detailed circuit diagram.
+- **`components.csv`**: CSV file listing all the components used.
