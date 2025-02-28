@@ -54,8 +54,6 @@ This project demonstrates the design and implementation of an 8-bit Arithmetic L
 ## Circuit Diagram
 The detailed circuit diagram is provided in the `ALU Diagram.pdf` file.
 
-![Circuit Diagram](Documents/ALU%20Diagram.pdf)
-
 ## Setup Instructions
 ### Hardware Setup
 1. Connect the DIP switches, adder ICs, level shifters, seven-segment displays, decoder, transistors, resistors, and LEDs as per the circuit diagram.
